@@ -18,6 +18,7 @@ export const Search = ({ onClose, onMovieSearch }: any) => {
 	useEffect(() => {
 		onMovieSearch(debouncedValue);
 		setChecked(true);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [debouncedValue]);
 
 	const onCloseSearch = () => {
